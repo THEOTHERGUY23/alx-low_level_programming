@@ -4,8 +4,8 @@
 
 /**
  * string_nconcat - concatenates string
- * @s1: string
- * @s2: string
+ * @s1: string 1
+ * @s2: string 2
  * @n: number of bytes to concatenates from s2
  * Return: concatenated string
  */
@@ -21,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (i = 0; s1[1] != '\0'; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 		s1len++;
 	for (i = 0; s2[i] != '\0'; i++)
 		s2len++;
@@ -34,8 +34,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		for (i = 0; s1[i] != '\0'; i++)
 			output[i] = s1[i];
 		for (i = 0; s2[i] != '\0'; i++)
-			output[s1len + 1] = s2[i];
-		output[s1len + 1] = '\0';
+			output[s1len + i] = s2[i];
+		output[s1len + i] = '\0';
 	}
 	else
 	{
