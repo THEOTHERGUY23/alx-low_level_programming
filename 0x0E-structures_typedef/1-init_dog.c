@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * inity_dog - ininitalises a dog
+ * init_dog - ininitalises a dog
  * @d: pointer to dog
  * @name: name of dog
  * @age: age of dog
