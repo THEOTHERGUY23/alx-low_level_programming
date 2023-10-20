@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * argstostr - entry point 
+ * argstostr - entry point
  * @ac: int input
  * @av: double pointer array
  * Return: 0 (Success)
